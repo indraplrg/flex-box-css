@@ -1,0 +1,162 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+
+.container {
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: rgb(253, 62, 62);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.brand {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-family: "Righteous", cursive;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+}
+
+.navigation > li {
+  margin-left: 20px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.navigation > li > a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 0.2s all ease-in-out;
+  letter-spacing: 3px;
+}
+
+.navigation > li:nth-child(2) > a {
+  color: #222;
+  background-color: whitesmoke;
+  padding: 5px 15px;
+  border-radius: 2px;
+}
+
+.navigation > li:nth-child(2) > a:hover {
+  color: whitesmoke;
+  background-color: rgb(253, 62, 62);
+  padding: 5px 15px;
+  border-radius: 2px;
+}
+
+.navigation > li > a:hover {
+  color: #222;
+  background-color: whitesmoke;
+  padding: 5px 15px;
+  border-radius: 2px;
+}
+
+/* Content */
+main {
+  display: flex;
+  padding: 10px 30px;
+}
+
+.content {
+  flex: 3;
+  margin-bottom: 10px;
+}
+.content > h1 {
+  font-family: "Arimo", sans-serif;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.content > p {
+  margin-bottom: 10px;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.main-content > label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.main-content > label > img {
+  margin-top: 20px;
+  width: 90%;
+  height: 90%;
+}
+
+.main-content > label > p {
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  font-family: "IBM Plex Serif", serif;
+}
+
+/* sidebar */
+.sidebar {
+  background-color: rgb(253, 62, 62);
+  flex: 0.7;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  box-sizing: border-box;
+  height: 0%;
+  border: 3px whitesmoke solid;
+}
+.sidebar > ul {
+  list-style: none;
+}
+
+.sidebar > ul > a > li {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+  color: ghostwhite;
+  border: #333 solid 1px;
+  padding: 10px;
+  transition: 0.2s all ease-in-out;
+  border-radius: 3px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.sidebar > ul > a {
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+.sidebar > ul > a:hover > li {
+  background-color: ghostwhite;
+  color: #222;
+  text-decoration: none;
+  border: none;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  padding: 50px;
+  background-color: rgb(253, 62, 62);
+  display: flex;
+  justify-content: center;
+  color: ghostwhite;
+  font-size: 1.1rem;
+  font-family: "IBM Plex Serif", serif;
+}
